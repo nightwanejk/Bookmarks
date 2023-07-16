@@ -186,14 +186,14 @@ INTERNAL_IPS = [
     '127.0.0.1',
 ]
 
-REDIS_HOST = 'localhost'
+REDIS_HOST = '192.168.0.8'
 REDIS_PORT = 6379
 REDIS_DB = 0
 
 CACHES = {
     'default': {
         'BACKEND': 'django_redis.cache.RedisCache',
-        'LOCATION': 'redis://<localhost>:6379/1',
+        'LOCATION': 'redis://<192.168.0.8>:6379/1',
         'OPTIONS': {
             'CLIENT_CLASS': 'django_redis.client.DefaultClient',
         }
